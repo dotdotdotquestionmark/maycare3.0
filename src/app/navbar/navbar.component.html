@@ -1,0 +1,21 @@
+<mat-toolbar>
+    <a routerLink="/" class="logo">Palo Alto Care Homes</a>
+    <ul class="menu">
+        <li class="desktopmenu"><a class="directory" routerLink="/">Home</a></li>
+        <li class="desktopmenu"><a class="directory" routerLink="/about">About</a></li>
+        <li class="desktopmenu"><a class="directory" routerLink="/facilities">Facilities</a></li>
+        <li class="desktopmenu"><a class="directory" routerLink="/contact">Contact</a></li>
+    </ul>
+    <button type="button" mat-button (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+</mat-toolbar>
+
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="over" opened="false">
+        <ul class="sidemenu">
+            <a routerLink="/" class="mobilemenu" (click)="drawer.toggle()">Home</a>
+            <a routerLink="/about" class="mobilemenu" (click)="drawer.toggle()">About</a>
+            <a routerLink="/facilities" class="mobilemenu" (click)="drawer.toggle()">Facilities</a>
+            <a routerLink="/contact" class="mobilemenu" (click)="drawer.toggle()">Contact</a>
+        </ul>
+    </mat-drawer>
+</mat-drawer-container>

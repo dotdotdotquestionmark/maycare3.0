@@ -1,0 +1,79 @@
+mat-toolbar {
+    background:  rgb(200, 200, 200);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    animation: fade 2s;
+    z-index: 6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 20px;
+}
+
+
+.header {
+    margin-top: 30px;
+} 
+
+.desktopmenu {
+    display: inline;
+}
+
+.menu {
+    text-decoration: none;
+    margin-left: auto;
+}
+
+// Mobile Mode
+@media (max-width: 800px) {
+    .desktopmenu {
+        display: none;
+    }
+
+    button {
+        margin-left: auto;
+    }
+
+    .sidenav {
+        background:rgb(200, 200, 200);
+        height: 100%;
+        align-items: center;
+        display: flex;
+        width: 40%;
+        z-index: 5;
+        position: fixed;
+    }
+
+    .sidemenu {
+        padding-top: 50px;
+        font-size: 20px;
+    }
+
+    .mobilemenu {
+        padding: 10px;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+}
+
+// desktop configurations
+@media (min-width: 800px) {
+    button {
+        display: none;
+    }
+
+    .directory:hover {
+        color: #00d9ff;
+        border-bottom: 3px solid #000000;
+        transition: .25s;
+    }
+    
+}
+
+
