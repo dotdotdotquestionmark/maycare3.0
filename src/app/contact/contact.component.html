@@ -1,7 +1,14 @@
-<html>
-    <body>
-        <h1>Contact Us</h1>
-        <p><a> Phone: (650) 814-4400</a></p>
-        <p><a> Fax: (650) 268-1300</a></p>
-    </body>
-</html>    
+<body>
+    <h1>Contact Us</h1>
+    <form #contactForm="ngForm" (ngSubmit) ="sendForm(contactForm.value); contactForm.reset()">
+        <input type="text" id = "name" placeholder="name" [(ngModel)]= "model.name" name="name" #name="ngModel">
+        <br><br>
+        <input type="text" name = "email" placeholder="email" [(ngModel)]= "model.email" name="email" #email="ngModel">
+        <br><br>
+        <input type="text" name = "phone" placeholder="phone" [(ngModel)]= "model.phone" name="phone" #phone="ngModel">
+        <br><br>
+        <input type="text" name = "message" placeholder="message" [(ngModel)]= "model.message" name="message" #message="ngModel">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
