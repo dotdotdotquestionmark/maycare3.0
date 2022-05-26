@@ -1,0 +1,123 @@
+/*mObIlE fIRsT*/
+
+body { 
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+    h1 {
+        font-size: 18px;
+        padding-left: 2%;
+        animation: fadein 2s;
+    }
+
+    h2 {
+        animation: fadein 3s;
+        font-size: 14px;
+        padding-left: 2%;
+    }
+
+    h3 {
+        font-size: 10px;
+        padding-left: 2%;
+    }
+
+    ul {
+        animation: fadein 4s;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+
+    img {
+        width: 100%;
+        padding-top: 0%;   
+        animation: fadein 2s;    
+    }
+}
+
+
+    /*Desktop view mobile first */
+    @media only screen and (min-width: 800px)  {
+
+
+
+        img {
+            width: 100%;
+            padding-top: 0%;   
+            animation: fadein 2s;    
+        
+        }
+
+        .imagedisplay {
+            float: right;
+            height: 200px;
+            width: 200px;
+            padding-right: 20%;
+            color: gray;
+        }
+
+        .introduction {
+            margin: 0;
+            align-self: auto;
+        }
+        
+        .textarea {
+            padding-left: 30%;
+            padding-right: 30%;
+        }
+
+        h1 {
+            font-size: 18px;
+            padding-top: 10px;
+            
+        }
+
+        h2 {
+            font-size: 14px;
+
+            
+        }
+
+        h3 {
+            font-size: 10px;
+
+        }
+        
+
+    }
+
+
+.line {
+    background-color: #00d9ff;
+    height: 8px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 00px;
+    width: 1px;
+    animation: initialize 2s ease-in forwards;
+
+}
+
+@keyframes initialize {
+    0% {
+        width: 0%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    0% { 
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

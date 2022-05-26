@@ -1,0 +1,14 @@
+<body>
+    <h1>Contact Us</h1>
+    <form #contactForm="ngForm" (ngSubmit) ="sendForm(contactForm.value); contactForm.reset()">
+        <input type="text" class = "name" placeholder="name" [(ngModel)]= "model.name" name="name" #name="ngModel">
+        <br><br>
+        <input type="text" class = "email" placeholder="email" [(ngModel)]= "model.email" name="email" #email="ngModel">
+        <br><br>
+        <input type="text" class = "phone" placeholder="phone" [(ngModel)]= "model.phone" name="phone" #phone="ngModel">
+        <br><br>
+        <input type="text" class = "message" placeholder="message" [(ngModel)]= "model.message" name="message" #message="ngModel">
+        <br><br>
+        <button mat-raised-button type="submit">Submit</button>
+    </form>
+</body> 

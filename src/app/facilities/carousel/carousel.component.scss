@@ -1,0 +1,62 @@
+img {
+    height: auto;
+    width: 600px;
+    margin: 0;
+}
+
+button {
+    background: rgba(172, 172, 172, 0.5);
+    color: white;
+    border: none;
+    width: 50px;
+}
+
+.buttons { 
+    z-index: 6;
+    margin-top: -350px;
+    padding-bottom: 350px;
+}
+
+.forward {
+    padding-left: 535px;
+}
+
+.positionshow {
+    list-style-type: none;
+    color: white;
+    padding-left: 30%;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+.next {
+    position: absolute;
+}
+
+.prev {
+    left: 0px;
+    position: absolute;
+}
+
+@media (max-width: 800px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .forward {
+        right: 65px;
+        position: absolute;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .positionshow{
+        display: none;
+    }
+}
